@@ -1,0 +1,16 @@
+void main()
+{
+    int n=121;// number to be checked
+    int temp=n;//duplicate of original no. to be used for reversal
+    double s=0;
+    while(temp>0)
+    {
+        double r=temp%10;
+        s=s*10+r;
+        temp=temp/10;
+    }
+    if(n==s)
+    {
+        System.out.println("palindrome");
+    }
+}
