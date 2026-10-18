@@ -1,0 +1,19 @@
+import java.util.*;
+public class perimetercalculation {
+
+    public static void main(String[]args)
+    {
+        double perimeter=0;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter three sides of triangle");
+        int a =sc.nextInt();
+        int b =sc.nextInt();
+        int c =sc.nextInt();
+
+        perimeter=a+b+c;
+
+        System.out.println("perimeter of triangle = "+perimeter);
+
+
+    }
+}
