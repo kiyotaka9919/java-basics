@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class SimpleArmstrong {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter a 3-digit number: ");
+        int num = sc.nextInt();
+        
+        int originalNum = num;
+        int sum = 0;
+        int rem;
+        
+        // Loop to separate digits and calculate the cube sum
+        while (num > 0) {
+            rem = num % 10;          // Gets the last digit
+            sum = sum + (rem * rem * rem); // Cubes the digit and adds to sum
+            num = num / 10;          // Removes the last digit
+        }
+        
+        // Check if the final sum matches the original number
+        if (sum == originalNum) {
+            System.out.println(originalNum + " is an Armstrong number.");
+        } else {
+            System.out.println(originalNum + " is NOT an Armstrong number.");
+        }
+        
+        sc.close();
+    }
+}
