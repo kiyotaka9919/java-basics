@@ -1,0 +1,16 @@
+import jdk.swing.interop.SwingInterOpUtils;
+
+public class nonvoid_function {
+
+    static int multiply(int x,int y)
+    {
+        return x*y;
+    }
+
+
+    static void main() {
+
+        int product=multiply(9,8);
+        System.out.println("product = "+product);
+    }
+}
