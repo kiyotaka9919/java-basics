@@ -1,0 +1,15 @@
+public class methodsum
+{
+    static void sum(int a,int b)
+    {
+        int sum=0;
+        sum=a+b;
+        System.out.println("sum = "+sum);
+    }
+
+    static void main() {
+
+        sum(4,5);
+
+    }
+}
