@@ -1,0 +1,27 @@
+public class staticmethods {
+
+static void printwelcome()
+{
+    System.out.println("welcome to code practice");
+}
+static int calculateTotal(int solved,int bonus)
+{
+    return solved+bonus;
+}
+static boolean iseligibleForBadge(int streakDays)
+{
+    return streakDays>=30;
+}
+
+
+    public static void main(String[]args)
+    {
+
+printwelcome();
+int finalscore=calculateTotal(120,50);
+        System.out.println("final score = "+finalscore);
+
+        boolean eligible=iseligibleForBadge(35);
+        System.out.println("badge eligible = "+eligible);
+    }
+}
