@@ -1,0 +1,22 @@
+public class methodoverload {
+
+    static int add(int a ,int b)
+    {
+        return a+b;
+    }
+    static float add(int x,float y)
+    {
+        return x+y;
+    }
+
+
+    static void main()
+    {
+        int ans=add(1,2);
+        System.out.println("ans 1 = "+ans);
+        float ans1=add(1,2.2f);
+        System.out.println("ans 2 = "+ans1);
+
+
+    }
+}
