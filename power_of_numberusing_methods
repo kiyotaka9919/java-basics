@@ -1,0 +1,17 @@
+public class Main {
+
+    static void power(int base, int exponent) {
+
+        int result = 1;
+
+        for (int i = 1; i <= exponent; i++) {
+            result = result * base;
+        }
+
+        System.out.println("Result = " + result);
+    }
+
+    public static void main(String[] args) {
+        power(2, 3);
+    }
+}
