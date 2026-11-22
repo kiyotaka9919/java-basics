@@ -1,0 +1,24 @@
+public class twodarrayprac {
+
+    static void main()
+    {
+
+        int [][] brr={{1,2},
+                     {1,2,3},
+                     {1,2,3,4},
+                     {1,2}};
+
+        int rowlength=brr.length;
+
+        for(int rowindex=0;rowindex<=rowlength-1;rowindex++)
+        {
+            int collength=brr[rowindex].length;
+
+            for(int colindex=0;colindex<=collength-1;colindex++)
+            {
+                System.out.print(brr[rowindex][colindex]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
