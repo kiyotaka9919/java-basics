@@ -1,0 +1,31 @@
+
+public class somestring_keywords_usage {
+    
+    static void main() {
+
+        String str="My name is Aditya";
+        int strlen=str.length();
+
+        // converting string to array using-->      .tocharArray();
+        char []arr=str.toCharArray();
+        int arrlen=arr.length;
+
+        for(char ch:arr)
+        {
+            System.out.print(ch);
+        }
+        System.out.println();
+        System.out.println("length as a string"+strlen);
+        System.out.println("length as an array"+arrlen);
+
+        // splitting string into array of words using-->       split keyword
+        String str2="i,am,the,gretest";
+        String [] words=str2.split(",");
+
+        for(String stri:words)
+        {
+            System.out.println(stri);
+        }
+
+    }
+}
