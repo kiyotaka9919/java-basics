@@ -1,0 +1,36 @@
+public class twostringequalitycheck {
+
+    static void main() {
+
+        String str1="ADITYA";
+        String str2="Aditya";
+
+        //lets check whether they are equal or not
+
+        if(str1==str2)
+        {
+            System.out.println("they both refer to same value or place in the string pool ");
+        }
+        else
+        {
+            System.out.println("they do not refer to same place or value in the string pool ");
+        }
+        if(str1.equals(str2))
+        {
+            System.out.println("both strings are equal with same case ");
+        }
+        else
+        {
+            System.out.println("both string may or may not have same case and could also be different");
+        }
+        if(str1.equalsIgnoreCase(str2))
+        {
+            System.out.println("egnoring the their cases both string are same ");
+        }
+        else
+        {
+            System.out.println("both strings are different");
+        }
+
+    }
+}
