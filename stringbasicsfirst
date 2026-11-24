@@ -1,0 +1,13 @@
+public class stringbasics {
+
+
+    static void main() {
+
+        String firstname="aditya";
+        String lastname=new String("Dwivedi");
+        System.out.println(firstname+"  "+lastname);
+
+        System.out.println(firstname.length());
+        System.out.println(lastname.charAt(2));
+    }
+}
