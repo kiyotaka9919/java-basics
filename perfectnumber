@@ -1,6 +1,30 @@
 public class perfectnumber {
+// second method or sultion for perfect number takes less time more efficient time complexity root n
+    static boolean isperfect(int n)
+    {
+        int j=0;
+        j=n;
+      int sum=1;
+      for(int i=2;i*i<=n;i++)
+      {
+          if(n%i==0)
+          {
+              int firstfactor=i;
+              int secondfactor=n/i;
+              sum=sum+firstfactor+secondfactor;
+          }
+      }
+if(sum==j)
+{
+    return true;
 
-
+}
+else
+{
+    return false;
+}
+    }
+    /* first method or soultion to solve takes a little more time 
     static boolean isperfect(int n)
     {
         int j=0;
@@ -22,6 +46,8 @@ public class perfectnumber {
             return false;
         }
     }
+*/
+
 
     static void main() {
 
