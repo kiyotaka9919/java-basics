@@ -1,0 +1,59 @@
+public class classes_objects_prac {
+
+int id;
+String name;
+int age;
+
+public classes_objects_prac()
+{
+    System.out.println("default constructor called ");
+}
+
+public classes_objects_prac(int age,int id,String name)
+{
+    this.id=id;
+    this.age=age;
+    this.name=name;
+}
+{
+
+}
+void study()
+{
+    System.out.println("study");
+}
+void sleep()
+{
+    System.out.println("sleep");
+}
+
+void bunking()
+{
+    System.out.println("bunking");
+}
+
+    void main() {
+
+classes_objects_prac student1=new classes_objects_prac(24,10306,"Aditya");
+
+        System.out.println(student1.id);
+        System.out.println(student1.age);
+        System.out.println(student1.name);
+        
+
+/*student1.id=10306;
+student1.name="Aditya";
+student1.age=24;
+
+        System.out.println(student1.name);
+        System.out.println(student1.age);
+        System.out.println(student1.id);
+
+        student1.bunking();
+        student1.sleep();
+        student1.study();
+*/
+
+    }
+
+}
