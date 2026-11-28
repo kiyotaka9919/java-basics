@@ -1,0 +1,42 @@
+public class copy_constructor {
+
+int id;
+int age;
+String name;
+
+//default constructor
+copy_constructor()
+{
+    System.out.println("default constructor called");
+}
+
+//parameterised constructor
+copy_constructor(int id,int age,String name)
+
+{
+    this.id=id;
+    this.age=age;
+    this.name=name;
+}
+
+
+//copy constrcutor
+copy_constructor(copy_constructor b)
+{
+this.id=b.id;
+this.age=b.age;
+this.name=b.name;
+}
+
+
+    static void main() {
+
+    copy_constructor studentA=new copy_constructor(10306,24,"aditya");
+
+    copy_constructor studentB=new copy_constructor(studentA);
+
+        System.out.println(studentB.id);
+        System.out.println(studentB.age);
+        System.out.println(studentB.name);
+    }
+}
